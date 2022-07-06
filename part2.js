@@ -85,8 +85,8 @@ console.log(q6String);
 console.log("\n==========Question 7==========");
 let q7Array = [1, 2, 3, 4, 5 , 6, 7, 8];
 console.log(q7Array.toString());
-for (let y = 0; y < q7Array.length; y++) {
-    q7Array[y] += 1
+for (let i = 0; i < q7Array.length; i++) {
+    q7Array[i] += 1
 }
 console.log(q7Array.toString());
 
@@ -98,7 +98,7 @@ console.log(q7Array.toString());
 console.log("\n==========Question 8==========");
 let q8Array = ["Bandidos", "Lorax", "Dog", "Breakfast"]
 console.log(q8Array);
-for (let t = 0; t < q8Array.length; t++) {
-    q8Array[t] = q8Array[t].length;
+for (let i = 0; i < q8Array.length; i++) {
+    q8Array[i] = q8Array[i].length;
 }
 console.log(q8Array.toString());
