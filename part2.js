@@ -1,22 +1,23 @@
 // Additional assignments for Day 4
-console.log("=====================Part 2=====================")
+console.log("=====================Part 2=====================");
 /* EXTRA 1
  Write a piece of code for reverting an array.
  es:
  [1, 3, 5] ==> [5, 3, 1]
 */
 
-console.log("\n==========Question 1==========")
+console.log("\n==========Question 1==========");
 let q1Array = [1, 3, 5];
 console.log(q1Array.toString());
 q1Array = q1Array.reverse();
-console.log(q1Array.toString())
+console.log(q1Array.toString());
 
 /* EXTRA 2
  Write a piece of code for getting the maximum numerical value from an array.
 */
 
-console.log("\n==========Question 2==========")
+console.log("\n==========Question 2==========");
+console.log(q1Array.toString());
 let maxNumber = Math.max(...q1Array);
 console.log(maxNumber.toString());
 
@@ -24,7 +25,8 @@ console.log(maxNumber.toString());
  Write a piece of code for getting the minimum numerical value from an array.
 */
 
-console.log("\n==========Question 3==========")
+console.log("\n==========Question 3==========");
+console.log(q1Array.toString());
 let minNumber = Math.min(...q1Array);
 console.log(minNumber.toString());
 
@@ -32,8 +34,9 @@ console.log(minNumber.toString());
  Write a piece of code for getting only even numerical values from an array.
 */
 
-console.log("\n==========Question 4==========")
+console.log("\n==========Question 4==========");
 let q4Array = [1, 4, 6, 3, 2, 10, 7]
+console.log(q4Array.toString());
 let even = q4Array.filter(number => {
     return number % 2 === 0;
 });
@@ -45,6 +48,7 @@ console.log(even.toString());
 
 console.log("\n==========Question 5==========");
 let q5Array = [1, 4, 6, 3, 2, 10, 7];
+console.log(q5Array.toString());
 for (let i = 0; i < q5Array.length; i++) {
     if (q5Array[i] % 2 === 0) {
         q5Array.splice(i, 1);
@@ -58,23 +62,10 @@ console.log(q5Array.toString());
 */
 
 console.log("\n==========Question 6==========");
-// // let vowels = new RegExp("aeiou", "gi"); // ["a", "e", "i", "o", "u"];
-// let q6String = "ABC abc DEF def AAA aaa BBB bbb CCC ccc";
-// let letters = q6String.split("");
-// let pattern = "A" // /aeiou/gi;
-// for (let i = 0; i < letters.length; i++) {
-//     // let check = letters[i].match(/aeiou/gi);
-//     let check = pattern.test(letters[i]); 
-//     if (check === true) {
-//         letters.splice(i, 1);
-//         i -= 1
-//     }
-// }
-// q6String = letters.join("");
-// console.log(q6String);
 
 let vowels = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"];
 let q6String = "ABC abc DEF def AAA aaa BBB bbb CCC ccc";
+console.log(q6String);
 let letters = q6String.split("");
 for (let i = 0; i < letters.length; i++) {
     for (let x = 0; x < vowels.length; x++) {
