@@ -58,13 +58,30 @@ console.log(q5Array.toString());
 */
 
 console.log("\n==========Question 6==========");
-let vowels = new RegExp("aeiou", "gi"); // ["a", "e", "i", "o", "u"];
+// // let vowels = new RegExp("aeiou", "gi"); // ["a", "e", "i", "o", "u"];
+// let q6String = "ABC abc DEF def AAA aaa BBB bbb CCC ccc";
+// let letters = q6String.split("");
+// let pattern = "A" // /aeiou/gi;
+// for (let i = 0; i < letters.length; i++) {
+//     // let check = letters[i].match(/aeiou/gi);
+//     let check = pattern.test(letters[i]); 
+//     if (check === true) {
+//         letters.splice(i, 1);
+//         i -= 1
+//     }
+// }
+// q6String = letters.join("");
+// console.log(q6String);
+
+let vowels = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"];
 let q6String = "ABC abc DEF def AAA aaa BBB bbb CCC ccc";
 let letters = q6String.split("");
 for (let i = 0; i < letters.length; i++) {
-    if (letters[i] === vowels) {
-        letters.splice(i, 1);
-        i -= 1
+    for (let x = 0; x < vowels.length; x++) {
+        if (letters[i] === vowels[x]) {
+            letters.splice(i, 1);
+            i -= 1
+        }
     }
 }
 q6String = letters.join("");
@@ -74,11 +91,23 @@ console.log(q6String);
  Write a piece of code for increasing all the numerical values in a array by 1.
 */
 
-/* WRITE YOUR ANSWER HERE */
+console.log("\n==========Question 7==========");
+let q7Array = [1, 2, 3, 4, 5 , 6, 7, 8];
+console.log(q7Array.toString());
+for (let y = 0; y < q7Array.length; y++) {
+    q7Array[y] += 1
+}
+console.log(q7Array.toString());
 
 /* EXTRA 8 
  Replace all the strings contained in an array with their length.
  es.: ["strive", "is", "great"] => [6, 2, 5]
 */
 
-/* WRITE YOUR ANSWER HERE */
+console.log("\n==========Question 8==========");
+let q8Array = ["Bandidos", "Lorax", "Dog", "Breakfast"]
+console.log(q8Array);
+for (let t = 0; t < q8Array.length; t++) {
+    q8Array[t] = q8Array[t].length;
+}
+console.log(q8Array.toString());
