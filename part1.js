@@ -98,11 +98,11 @@ let car1 = {
     licensePlate : "WY2 3FG"
 };
 
-car2 = Object.assign({}, car1, {licensePlate : "23C FSE"});
-car3 = Object.assign({}, car1, {licensePlate : "D20 DSG"});
-car4 = Object.assign({}, car1, {licensePlate : "WII 902"});
-car5 = Object.assign({}, car1, {licensePlate : "GSL FUU"});
-car6 = Object.assign({}, car1, {licensePlate : "SLA 54F"});
+let car2 = Object.assign({}, car1, {licensePlate : "23C FSE"});
+let car3 = Object.assign({}, car1, {licensePlate : "D20 DSG"});
+let car4 = Object.assign({}, car1, {licensePlate : "WII 902"});
+let car5 = Object.assign({}, car1, {licensePlate : "GSL FUU"});
+let car6 = Object.assign({}, car1, {licensePlate : "SLA 54F"});
 
 console.log(`Car liscence plates: ${car1.licensePlate}, ${car2.licensePlate}, ${car3.licensePlate}, ${car4.licensePlate}, ${car5.licensePlate}, ${car6.licensePlate}`)
 
